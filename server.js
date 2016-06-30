@@ -5,7 +5,7 @@ var path = require('path');
 
 // Set up properties for express server
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // BodyParser middleware to interpret data sent to the server
 app.use(bodyParser.json());
