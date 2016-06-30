@@ -1,3 +1,4 @@
+// Create an array of friend objects to export
 var friends = [
 	{
 		'name': 'Dustin Diamond',
@@ -36,4 +37,5 @@ var friends = [
 	}
 ];
 
+// Export friend data to API
 module.exports = friends;
