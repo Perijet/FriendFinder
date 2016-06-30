@@ -12,12 +12,6 @@ app.get('/api/survey', function(req, res){
 app.post('/api/survey', function(req, res){
 	//friends.push(req.body);
 console.log(req.body.scores);
-	// newFriend = req.body;
-	// newFriend.routeName = newFriend.name.replace(/\s+/g, '').toLowerCase;
-	// console.log(newFriend);
-	// friends.push(newFriend);
-	//res.json(newFriend);
-
 
 var D = [];
 var A = req.body.scores;
@@ -57,15 +51,3 @@ console.log(match);
 
 });
 };
-
-// app.post('/api/new', function(req, res){
-
-// 	var newcharacter = req.body;
-// 	newcharacter.routeName = newcharacter.name.replace(/\s+/g, '').toLowerCase()
-
-// 	console.log(newcharacter);
-
-// 	characters.push(newcharacter);
-
-// 	res.json(newcharacter);
-// })
