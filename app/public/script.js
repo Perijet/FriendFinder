@@ -1,4 +1,3 @@
-//alert('hi');
 $("#subButton").on("click", function(){
 
 	var newFriend = 
@@ -14,13 +13,13 @@ $("#subButton").on("click", function(){
 	$.post(currentURL + "/api/survey", newFriend,
 		function(data){
 			console.log(data);
-			//alert("Adding friend...");
+			
 			$("#match").text(data.name);
 			$("#img").attr("src", data.photo);
 		});
 
 	$("#myModal").modal('toggle');
-	
+
 	$('#name').val('');
 	$('#photo').val('');
 	$('#q1').val('');
