@@ -32,13 +32,13 @@
 
 <!-- Container that includes survey questions survey submit button and footer -->
 <div class="container-fluid">
-
+<h3>About You</h3>
 <!-- Top of form that asks for the users name and profile picture -->
-<h4>Your Name</h4>
-<input type="text" name="" id="name" class="form-control" required="">
+<h4>Your Name (Required)</h4>
+<input type="text" name="" id="name" class="form-control profile" required="">
 
-<h4>Link to your profile picture</h4>
-<input type="text" name="" id="photo" class="form-control" required=""><br>
+<h4>Link to your profile picture (Required)</h4>
+<input type="text" name="" id="photo" class="form-control profile" required=""><br>
 
 <!-- Panel containing the 10 survey questions -->
 <div class="panel panel-default">
@@ -49,7 +49,7 @@
     <h3>Question 1</h3>
 		<h5>The letter of the law is more important to me than the spirit of the law.</h5>
 			<select class="question" id="q1">
-			  <option value=" "></option>
+			  <option value=""></option>
 			  <option value="1">1 - Strongly Disagree</option>
 			  <option value="2">2 - Disagree</option>
 			  <option value="3">3 - Neither Agree or Disagree</option>
@@ -59,7 +59,7 @@
 
 			<h5> I tend to be enthusiastic about new things.</h5>
 			<select class="question" id="q2">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -69,7 +69,7 @@
 
 			<h5>My political beliefs are very important to me.</h5>
 			<select class="question" id="q3">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -79,7 +79,7 @@
 
 			<h5>I see myself as someone who makes plans and follows through with them</h5>
 			<select class="question" id="q4">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -89,7 +89,7 @@
 
 			<h5>I like word games such as crossword puzzles or Scrabble</h5>
 			<select class="question" id="q5">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -99,7 +99,7 @@
 
 			<h5>When I really want to do something, I usually find a way to succeed at it.</h5>
 			<select class="question" id="q6">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -110,7 +110,7 @@
 			<h5>I see myself as someone who is helpful and unselfish with others</h5>
 			<select class="question" id="q7">
 
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -120,7 +120,7 @@
 
 			<h5>As I get older, things are better than I thought they would be.</h5>
 			<select class="question" id="q8">
-				<option value=" "></option>
+				<option value=""></option>
 			  	<option value="1">1 - Strongly Disagree</option>
 			  	<option value="2">2 - Disagree</option>
 			  	<option value="3">3 - Neither Agree or Disagree</option>
@@ -130,7 +130,7 @@
 
 			<h5>I rarely jump into something without first thinking about it. </h5>
 			<select class="question" id="q9">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
@@ -140,12 +140,11 @@
 
 			<h5>I carry out my obligations to the best of my ability. </h5>
 			<select class="question" id="q10">
-				<option value=" "></option>
+				<option value=""></option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Disagree</option>
 				<option value="5">5 - Strongly Agree</option>
 			</select>
 
@@ -157,6 +156,8 @@
 		</div>
 
 </div>
+
+<p><a href="/api/survey">API Friends List</a> | <a href="https://github.com/Perijet/FriendFinder">GitHub Repo</a></p>
 
 <!-- Simple footer that displays name and copyright symbol -->
 <div class="container navbar-text ">

@@ -1,5 +1,19 @@
 $("#subButton").on("click", function(){
 
+// Form validation
+function submit(){
+	var isFilled = true;
+	$('.profile, .question').each(function(){
+		if($(this).val() === ''){
+			isFilled = false;	
+		}
+	});
+
+	return isFilled;
+}
+
+if(submit() === true){
+	
 // Create object to hold user input 
 	var newFriend = 
 	{
@@ -38,6 +52,10 @@ $("#myModal").modal('toggle');
 	$('#q8').val('');
 	$('#q9').val('');
 	$('#q10').val('');
+
+}else{
+	alert("Please fill out all fields before submitting");
+}
 
 	return false;
 
