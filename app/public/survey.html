@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Survey</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
@@ -27,7 +28,14 @@
 	</div>
 
 </div>
+
 <div class="container-fluid">
+
+<h4>Your Name</h4>
+<input type="text" name="" id="name" class="form-control" required="">
+
+<h4>Link to your profile picture</h4>
+<input type="text" name="" id="photo" class="form-control" required=""><br>
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -42,7 +50,7 @@
 			  <option value="2">2 - Disagree</option>
 			  <option value="3">3 - Neither Agree or Disagree</option>
 			  <option value="4">4 - Agree</option>
-			  <option value="5">5 - Strongly Disagree</option>
+			  <option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5> I tend to be enthusiastic about new things.</h5>
@@ -52,7 +60,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>My political beliefs are very important to me.</h5>
@@ -62,7 +70,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>I see myself as someone who makes plans and follows through with them</h5>
@@ -72,7 +80,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>I like word games such as crossword puzzles or Scrabble</h5>
@@ -82,7 +90,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>When I really want to do something, I usually find a way to succeed at it.</h5>
@@ -92,7 +100,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>I see myself as someone who is helpful and unselfish with others</h5>
@@ -103,7 +111,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>As I get older, things are better than I thought they would be.</h5>
@@ -113,7 +121,7 @@
 			  	<option value="2">2 - Disagree</option>
 			  	<option value="3">3 - Neither Agree or Disagree</option>
 			  	<option value="4">4 - Agree</option>
-			  	<option value="5">5 - Strongly Disagree</option>
+			  	<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>I rarely jump into something without first thinking about it. </h5>
@@ -123,7 +131,7 @@
 				<option value="2">2 - Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select><hr>
 
 			<h5>I carry out my obligations to the best of my ability. </h5>
@@ -134,26 +142,47 @@
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Agree</option>
 				<option value="5">5 - Disagree</option>
-				<option value="5">5 - Strongly Disagree</option>
+				<option value="5">5 - Strongly Agree</option>
 			</select>
 
-		</div>
+	</div>
 
 		<div class="btn" aria-label="...">
-		  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-hand-right "></span> Submit</button>
-
+		  <button type="submit" class="btn btn-primary submit" id="subButton"><span class="glyphicon glyphicon-hand-right "></span> Submit</button>
 		</div>
-
-  </div>
-
-	<div class="container navbar-text ">
-        &copy; Nigel John 2016
-    </div>
 
 </div>
 
+<div class="container navbar-text ">
+    &copy; Nigel John 2016
+</div>
+
+</div>
+
+<!-- Page Modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Best Match</h2>
+      </div>
+      <div class="modal-body">
+      	<h3 id="match"></h3>
+      	<img id="img" src="" height="500" width="300">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<script type="text/javascript" src="./script.js"></script>
 
 </body>
 </html>
